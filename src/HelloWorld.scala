@@ -1,7 +1,18 @@
 object HelloWorld {
-  var greeting: String = "Hello, World!"  
-
-  def main(args: Array[String]) {
+  def main(greeting: String) {
     println(greeting)
   }
 }
+
+var greeting: String = "Hello, World!"
+
+HelloWorld.main(greeting)
+
+object Greeter {
+  def greet(name: String, surname: String) {
+    println("\nWelcome")
+    println(name + " " + surname)
+  }
+}
+
+Greeter.greet("John", "Appleseed")
