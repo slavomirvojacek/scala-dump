@@ -1,15 +1,13 @@
 object HelloWorld {
-  def main(greeting: String) {
-    println(greeting)
-  }
+  def main(greeting: String): Unit = println(greeting)
 }
 
-var greeting: String = "Hello, World!"
+val greeting: String = "Hello, World!"
 
 HelloWorld.main(greeting)
 
 object Greeter {
-  def greet(name: String, surname: String) {
+  def greet(name: String, surname: String): Unit = {
     println("\nWelcome")
     println(name + " " + surname)
   }
